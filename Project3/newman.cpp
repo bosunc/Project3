@@ -17,6 +17,8 @@ int main() {
     int e;
     int f;
     int g;
+    float h;
+    float y;
 
 
     cout << "main 주소 : " << a << endl;
