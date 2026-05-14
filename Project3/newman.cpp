@@ -20,7 +20,7 @@ int main() {
     float h;
     float y;
 
-
+    cout << y << endl;
     cout << "main 주소 : " << a << endl;
 
     change(a);
