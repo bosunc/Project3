@@ -7,7 +7,7 @@ void change(int arr[10000]) {
 
     arr[9999] = 777;
 }
-//123
+//12333
 int main() {
 
     int a[10000] = { 0 };
