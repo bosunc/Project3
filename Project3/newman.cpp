@@ -11,6 +11,7 @@ void change(int arr[10000]) {
 int main() {
 
     int a[10000] = { 0 };
+    int b;
 
     cout << "main 주소 : " << a << endl;
 
