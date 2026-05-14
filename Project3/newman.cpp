@@ -12,6 +12,7 @@ int main() {
 
     int a[10000] = { 0 };
     int b;
+    int c;
 
     cout << "main 주소 : " << a << endl;
 
