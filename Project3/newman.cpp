@@ -1,29 +1,22 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-struct Student {
-    string name;
-    int score;
-};
+void change(int arr[10000]) {
 
-void changeScore(Student* s) {
+    cout << "함수 내부 주소 : " << arr << endl;
 
-    cout << "함수 안 주소 : " << s << endl;
-
-    s->score = 100;
+    arr[9999] = 777;
 }
 
 int main() {
 
-    Student st = { "Kim", 50 };
+    int a[10000] = { 0 };
 
-    cout << "main 주소 : " << &st << endl;
+    cout << "main 주소 : " << a << endl;
 
-    changeScore(&st);
+    change(a);
 
-    cout << "최종 점수 : " << st.score << endl;
+    cout << a[9999] << endl;
 
     return 0;
 }
