@@ -19,9 +19,12 @@ int main() {
     int g;
     float h;
     float y;
+    y - 3.11;
+    d = 23;
 
     cout << y << endl;
     cout << "main 주소 : " << a << endl;
+    cout << d << endl;
 
     change(a);
 
