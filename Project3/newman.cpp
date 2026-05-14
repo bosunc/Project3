@@ -1,19 +1,26 @@
 #include <iostream>
 using namespace std;
 
-void changeValue(int* p) {
-    *p = 100;
+struct BigData {
+    int arr[3];
+};
+
+void test(BigData* data) {
+
+    cout << "함수 내부 주소 : " << data << endl;
+
+    data->arr[0] = 999;
 }
 
 int main() {
 
-    int num = 10;
+    BigData d = { 1, 2, 3 };
 
-    cout << "변경 전 : " << num << endl;
+    cout << "main의 주소 : " << &d << endl;
 
-    changeValue(&num);
+    test(&d);
 
-    cout << "변경 후 : " << num << endl;
+    cout << d.arr[0] << endl;
 
     return 0;
 }
