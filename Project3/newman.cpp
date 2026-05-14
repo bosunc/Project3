@@ -1,26 +1,29 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-struct BigData {
-    int arr[3];
+struct Student {
+    string name;
+    int score;
 };
 
-void test(BigData* data) {
+void changeScore(Student* s) {
 
-    cout << "함수 내부 주소 : " << data << endl;
+    cout << "함수 안 주소 : " << s << endl;
 
-    data->arr[0] = 999;
+    s->score = 100;
 }
 
 int main() {
 
-    BigData d = { 1, 2, 3 };
+    Student st = { "Kim", 50 };
 
-    cout << "main의 주소 : " << &d << endl;
+    cout << "main 주소 : " << &st << endl;
 
-    test(&d);
+    changeScore(&st);
 
-    cout << d.arr[0] << endl;
+    cout << "최종 점수 : " << st.score << endl;
 
     return 0;
 }
